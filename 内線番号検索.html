@@ -83,20 +83,20 @@
   }
   .dept-card {
     background: white;
-    border-radius: 12px;
-    padding: 18px 16px;
+    border-radius: 8px;
+    padding: 9px 14px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.09);
     cursor: pointer;
     border-left: 4px solid #3182ce;
     transition: transform 0.12s, box-shadow 0.12s;
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    align-items: center;
+    gap: 10px;
   }
   .dept-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.13); }
-  .dept-name { font-size: 15px; font-weight: 600; color: #1a202c; }
-  .dept-count { font-size: 13px; color: #718096; }
-  .dept-arrow { font-size: 18px; color: #3182ce; align-self: flex-end; margin-top: 4px; }
+  .dept-name { font-size: 14px; font-weight: 600; color: #1a202c; flex: 1; }
+  .dept-count { font-size: 12px; color: #718096; white-space: nowrap; }
+  .dept-arrow { font-size: 14px; color: #3182ce; flex-shrink: 0; }
 
   /* ===== PERSON CARDS ===== */
   .section-title {
