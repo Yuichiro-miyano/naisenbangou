@@ -47,7 +47,7 @@
   }
   .back-btn:hover { background: rgba(255,255,255,0.3); }
   .back-btn.visible { display: flex; }
-  .header h1 { font-size: 19px; font-weight: bold; letter-spacing: 1px; flex: 1; }
+  .header h1 { font-size: 19px; font-weight: bold; letter-spacing: 1px; }
   .breadcrumb {
     font-size: 13px;
     color: rgba(255,255,255,0.75);
@@ -79,7 +79,7 @@
     white-space: nowrap;
   }
   .clear-btn:hover { background: rgba(255,255,255,0.28); }
-  .stats { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 8px; }
+  .stats { font-size: 13px; color: rgba(255,255,255,0.85); margin-left: 12px; }
 
   /* ===== CONTAINER ===== */
   .container { padding: 16px; max-width: 960px; margin: 0 auto; }
@@ -179,6 +179,7 @@
   <div class="header-top">
     <button class="back-btn" id="backBtn" onclick="showDeptList()">&#8592; 戻る</button>
     <h1>&#128222; 内線番号簿</h1>
+    <div class="stats" id="stats"></div>
     <a class="header-logo" href="https://www.kyokuyo.co.jp" target="_blank" rel="noopener">
       <img src="https://www.marche.kyokuyo.co.jp/img/usr/common/bnr_footer_01.png" alt="極洋">
     </a>
@@ -189,7 +190,6 @@
            placeholder="名前・内線番号・部署名で検索..." autocomplete="off">
     <button class="clear-btn" onclick="clearSearch()">クリア</button>
   </div>
-  <div class="stats" id="stats"></div>
 </div>
 
 <div class="container" id="mainContainer"></div>
